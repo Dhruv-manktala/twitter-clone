@@ -31,6 +31,7 @@ export default function Home() {
       <div className="homepage h-screen flex">
         <Navigation currentTab={data?.currentTab} changeTab={changeTab} />
         <Feeds input={input} setInput={setInput} addTweet={addTweet} />
+        {/* Trending */}
         <Trending />
       </div>
     </>
