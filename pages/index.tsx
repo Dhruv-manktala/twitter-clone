@@ -3,6 +3,12 @@ import Feeds from "../components/Feeds";
 import Trending from "../components/Trending";
 import { useEffect, useState } from "react";
 import { dataType, postType } from "../lib/types/type";
+
+/**
+ * @description Twitter Main page
+ * @returns
+ * @param
+ */
 export default function Home() {
   const [input, setInput] = useState<string>("dkddkdk");
   const [data, setData] = useState<dataType>({ posts: [], currentTab: "Home" });
@@ -20,6 +26,7 @@ export default function Home() {
     setData({ ...data, currentTab: tab });
   };
 
+  // add tweet
   const addTweet = () => {
     if (input) {
       console.log(input);
