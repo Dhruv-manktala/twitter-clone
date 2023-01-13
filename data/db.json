@@ -1,56 +1,120 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "name": "Brie",
-            "postData": "Hi. Here is the latest episode of #SomeMoreNews with @drmistercody https://youtu.be/RlL4xvn6xWE",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "15h",
-            "likeCount": 180,
-            "commentCount": 19,
-            "views": "74.9K",
-            "retweetCount": 180,
-            "blueTick": true
-        },
-        {
-            "id": 2,
-            "name": "Saurabh Gupta(Micky)",
-            "postData": "Folks at @sports_odisha& entire machinery led by  @CMO_Odish @Naveen_Odish have not only built a huge hockey stadium but also #Odisha seems dedicated to the motto of #HockeyComesHome . Truly dedicated to #sports. ",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "10h",
-            "likeCount": 120,
-            "commentCount": 40,
-            "views": "100K",
-            "retweetCount": 10,
-            "blueTick": false
-        },
-        {
-            "id": 3,
-            "name": "DHANBAD DISTRICT CONGRESS",
-            "postData": "कांग्रेस कमिटी के द्वारा चलाए जा रहे चलो गांव की और कार्यक्रम आज दूसरे जारी\\nऔर देर शाम समापन किया गया। \\n @avinashpandeinc \\n@SantoshSinghINChttps: //antarkatha.comकांग्रेस-कमिटी-के-द्वारा/",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "2h",
-            "likeCount": 5000,
-            "commentCount": 20,
-            "views": "10K",
-            "retweetCount": 150,
-            "blueTick": false
-        },
-        {
-            "id": 4,
-            "name": "TOI Plus",
-            "postData": "With the Telugu epic action drama winning a Golden Globe for best original song Naatu Naatu, a look at why Rajamouli’s latest has beaten Bollywood to catch the love of foreign critics.",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "1.5h",
-            "likeCount": 300,
-            "commentCount": 120,
-            "views": "749K",
-            "retweetCount": 200,
-            "blueTick": true
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "name": "Brie",
+      "postData": "Hi. Here is the latest episode of #SomeMoreNews with @drmistercody https://youtu.be/RlL4xvn6xWE",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": "15h",
+      "likeCount": 180,
+      "commentCount": 19,
+      "views": "74.9K",
+      "retweetCount": 180,
+      "blueTick": true
+    },
+    {
+      "id": 2,
+      "name": "Saurabh Gupta(Micky)",
+      "postData": "Folks at @sports_odisha& entire machinery led by  @CMO_Odish @Naveen_Odish have not only built a huge hockey stadium but also #Odisha seems dedicated to the motto of #HockeyComesHome . Truly dedicated to #sports. ",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": "10h",
+      "likeCount": 120,
+      "commentCount": 40,
+      "views": "100K",
+      "retweetCount": 10,
+      "blueTick": false
+    },
+    {
+      "id": 3,
+      "name": "DHANBAD DISTRICT CONGRESS",
+      "postData": "कांग्रेस कमिटी के द्वारा चलाए जा रहे चलो गांव की और कार्यक्रम आज दूसरे जारी\\nऔर देर शाम समापन किया गया। \\n @avinashpandeinc \\n@SantoshSinghINChttps: //antarkatha.comकांग्रेस-कमिटी-के-द्वारा/",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": "2h",
+      "likeCount": 5000,
+      "commentCount": 20,
+      "views": "10K",
+      "retweetCount": 150,
+      "blueTick": false
+    },
+    {
+      "id": 4,
+      "name": "TOI Plus",
+      "postData": "With the Telugu epic action drama winning a Golden Globe for best original song Naatu Naatu, a look at why Rajamouli’s latest has beaten Bollywood to catch the love of foreign critics.",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": "1.5h",
+      "likeCount": 300,
+      "commentCount": 120,
+      "views": "749K",
+      "retweetCount": 200,
+      "blueTick": true
+    }
+  ],
+  "trendingPosts": [
+    {
+      "id": "trending_post_1",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 11500,
+      "trending_person_name": "ViratKohli"
+    },
+    {
+      "id": "trending_post_2",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 1809,
+      "trending_person_name": "Gambhir"
+    },
+    {
+      "id": "trending_post_3",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 1809,
+      "trending_person_name": "Gambhir"
+    },
+    {
+      "id": "trending_post_4",
+      "topic": "India",
+      "trending_global": false,
+      "tweet_count": 45900,
+      "trending_person_name": "RRRMovie"
+    },
+    {
+      "id": "trending_post_5",
+      "topic": "India",
+      "trending_global": false,
+      "tweet_count": 4228,
+      "trending_person_name": "Shubham Gill"
+    }
+  ],
+  "users_list": [
+    {
+      "user_id": "opex_1",
+      "user_name": "prakharrai1609",
+      "user_img": "https://pbs.twimg.com/profile_images/1584943698491887618/5x2-gsGx_400x400.jpg",
+      "user_display_name": "Prakhar Rai"
+    },
+    {
+      "user_id": "opex_2",
+      "user_name": "ritik2209",
+      "user_img": "https://pbs.twimg.com/profile_images/1560696782341881856/ZSUGmcdY_400x400.jpg",
+      "user_display_name": "Ritik Agarwal"
+    },
+    {},
+    {
+      "user_id": "opex_3",
+      "user_name": "anishde10",
+      "user_img": "https://pbs.twimg.com/profile_images/1604156766081544193/or4TytCy_400x400.jpg",
+      "user_display_name": "Anish De"
+    },
+    {
+      "user_id": "opex_4",
+      "user_name": "riti2409",
+      "user_img": "https://pbs.twimg.com/profile_images/1606957091062939649/MHN4mAZ1_400x400.jpg",
+      "user_display_name": "Riti Kumari"
+    }
+  ]
 }
