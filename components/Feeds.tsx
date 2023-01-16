@@ -12,7 +12,7 @@ const Feeds = ({
 }: feedsPropType) => {
   return (
     <>
-      <div className="feed overflow-auto" style={{ width: "45%" }}>
+      <div className="feed overflow-auto pr-2`" style={{ width: "45%" }}>
         <Tweet input={input} setInput={setInput} addTweet={addTweet} />
 
         <div className="posts flex flex-col p-1 mt-2">

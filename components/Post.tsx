@@ -8,6 +8,7 @@ import { postPropType } from "../lib/types/type";
 import { FcLike } from "react-icons/Fc";
 import { BsFillBookmarkHeartFill } from "react-icons/Bs";
 import moment from "moment";
+import { useRouter } from "next/router";
 
 const Post = ({ data, toggleLike, toggleBookmark }: postPropType) => {
   const getDate = (date: number | string): string => {
@@ -16,6 +17,8 @@ const Post = ({ data, toggleLike, toggleBookmark }: postPropType) => {
     }
     return date;
   };
+
+  const router = useRouter();
 
   return (
     <>
@@ -33,7 +36,12 @@ const Post = ({ data, toggleLike, toggleBookmark }: postPropType) => {
             </div>
             <IoIosArrowDown className="justify-self-end" />
           </div>
-          <div className="post_data p-1 text-gray-700">
+          <div
+            className="post_data p-1 text-gray-700 cursor-pointer"
+            onClick={() => {
+              router.push(`/tweet/${data.id}`);
+            }}
+          >
             <p>{data.postData}</p>
           </div>
 
