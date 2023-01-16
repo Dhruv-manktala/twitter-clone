@@ -10,8 +10,8 @@ const TrendingPost = ({
     trendingPost;
 
   return (
-    <li className="flex flex-row justify-between">
-      <div className="flex flex-col my-4 text-[#eef3f4]">
+    <li className="flex flex-row my-2 justify-between">
+      <div className="flex flex-col text-[#eef3f4]">
         <div className="flex gap-1">
           {trending_global ? (
             <>
@@ -33,7 +33,7 @@ const TrendingPost = ({
           {tweetFormatter(tweet_count)} tweets
         </div>
       </div>
-      <div className="text-[#6e7278] pt-5 cursor-pointer">
+      <div className="text-[#6e7278] my-1 cursor-pointer">
         <More />
       </div>
     </li>
