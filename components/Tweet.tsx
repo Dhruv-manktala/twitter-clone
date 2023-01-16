@@ -3,8 +3,8 @@ import { HiOutlinePhotograph } from "react-icons/Hi";
 import { AiOutlineGif } from "react-icons/Ai";
 import { BiPoll } from "react-icons/Bi";
 import { FaRegSmile } from "react-icons/Fa";
-import { feedsPropType } from "../lib/types/type";
-const Tweet = ({ input, setInput, addTweet }: feedsPropType) => {
+import { feedsPropType, tweetPropType } from "../lib/types/type";
+const Tweet = ({ input, setInput, addTweet }: tweetPropType) => {
   return (
     <div className="tweet">
       <div className="text-2xl px-4 py-3 font-bold border-b-2 border-gray-400">
@@ -27,6 +27,7 @@ const Tweet = ({ input, setInput, addTweet }: feedsPropType) => {
             rows={3}
             style={{
               width: "100%",
+              resize: "none",
             }}
             onChange={(e) => {
               setInput(e.target.value);
@@ -35,14 +36,26 @@ const Tweet = ({ input, setInput, addTweet }: feedsPropType) => {
 
           <div className="functions flex justify-between items-center">
             <div className="flex gap-2">
-              <HiOutlinePhotograph size={25} color="#1DA1F2" />
-              <AiOutlineGif size={25} color="#1DA1F2" />
-              <BiPoll size={25} color="#1DA1F2" />
-              <FaRegSmile size={25} color="#1DA1F2" />
+              <HiOutlinePhotograph
+                size={25}
+                color="#1DA1F2"
+                className="cursor-pointer"
+              />
+              <AiOutlineGif
+                size={25}
+                color="#1DA1F2"
+                className="cursor-pointer"
+              />
+              <BiPoll size={25} color="#1DA1F2" className="cursor-pointer" />
+              <FaRegSmile
+                size={25}
+                color="#1DA1F2"
+                className="cursor-pointer"
+              />
             </div>
 
             <button
-              className="text-white text-md font-medium bg-blue-500 px-6 py-1.5 rounded-full self-end"
+              className="text-white text-md font-medium bg-blue-500 px-6 py-1.5 m-2 rounded-full self-end"
               onClick={() => {
                 addTweet();
               }}

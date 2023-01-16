@@ -7,7 +7,7 @@ import Trending from "./Trending";
 const Navigation = ({ currentTab, changeTab }: navigationPropsType) => {
   return (
     <>
-      <div className="navigation w-1/4 flex items-center flex-col">
+      <div className="navigation w-1/4 border-r`-2 border-gray-400 flex items-center flex-col">
         {/* Image */}
         <img src={logo} width="50" className="justify-item-center m-10" />
         {/* Tabs */}
@@ -26,7 +26,10 @@ const Navigation = ({ currentTab, changeTab }: navigationPropsType) => {
           })}
         </div>
         {/* Tweet Button */}
-        <button className="text-white text-xl font-medium bg-blue-500 px-20 py-2 rounded-full mt-8">
+        <button
+          className="text-white text-xl font-medium bg-blue-500 py-2 rounded-full mt-8"
+          style={{ minWidth: "200px", width: "80%" }}
+        >
           Tweet
         </button>
       </div>

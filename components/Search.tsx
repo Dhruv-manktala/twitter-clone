@@ -68,7 +68,7 @@ const Search = () => {
                   })}
               </>
             ) : (
-              <li className="py-2 pl-2">search the users</li>
+              <li className="py-4 pl-2 text-[#eef3f4]">search the users</li>
             )}
           </ul>
         ) : null}
