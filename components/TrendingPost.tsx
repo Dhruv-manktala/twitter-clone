@@ -1,5 +1,6 @@
 import { TrendingPostInterface } from "../lib/types/type";
 import { BsThreeDots as More } from "react-icons/Bs";
+import { tweetFormatter } from "../utilities";
 const TrendingPost = ({
   trendingPost,
 }: {
@@ -7,14 +8,7 @@ const TrendingPost = ({
 }) => {
   const { trending_global, trending_person_name, tweet_count, topic } =
     trendingPost;
-  const tweetFormatter = (tweetCount: number): string => {
-    if (tweetCount > 10000) {
-      const result = Math.abs(tweetCount / 1000).toFixed(1);
-      return `${result}k`;
-    } else {
-      return `${tweetCount}`;
-    }
-  };
+
   return (
     <li className="flex flex-row justify-between">
       <div className="flex flex-col my-4 text-[#eef3f4]">

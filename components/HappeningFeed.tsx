@@ -21,6 +21,9 @@ const HappeningFeed = () => {
           return <TrendingPost key={everyPost.id} trendingPost={everyPost} />;
         })}
       </ul>
+      <div className="mt-2">
+        <p className="text-sm text-[#1a98ea] cursor-pointer">SHOW MORE</p>
+      </div>
     </div>
   );
 };
