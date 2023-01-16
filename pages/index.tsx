@@ -6,7 +6,7 @@ import { dataType, postType } from "../lib/types/type";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
-  const [input, setInput] = useState<string>("");
+  const [input, setInput] = useState<string>("dkddkdk");
   const [data, setData] = useState<dataType>({ posts: [], currentTab: "Home" });
   const [currentTab, setCurrentTab] = useState("Home");
 
