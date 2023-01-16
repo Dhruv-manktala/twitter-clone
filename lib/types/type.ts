@@ -41,4 +41,19 @@ export interface feedsPropType {
   input: string;
   setInput: (tweet: string) => void;
   addTweet: () => void;
+  data: { posts: postType[]; currentTab: string };
+  toggleLike: (id: number) => void;
+  toggleBookmark: (id: number) => void;
+}
+
+export interface tweetPropType {
+  input: string;
+  setInput: (tweet: string) => void;
+  addTweet: () => void;
+}
+
+export interface postPropType {
+  data: postType;
+  toggleLike: (id: number) => void;
+  toggleBookmark: (id: number) => void;
 }

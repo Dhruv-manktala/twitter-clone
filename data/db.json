@@ -1,56 +1,43 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "name": "Brie",
-            "postData": "Hi. Here is the latest episode of #SomeMoreNews with @drmistercody https://youtu.be/RlL4xvn6xWE",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "15h",
-            "likeCount": 180,
-            "commentCount": 19,
-            "views": "74.9K",
-            "retweetCount": 180,
-            "blueTick": true
-        },
-        {
-            "id": 2,
-            "name": "Saurabh Gupta(Micky)",
-            "postData": "Folks at @sports_odisha& entire machinery led by  @CMO_Odish @Naveen_Odish have not only built a huge hockey stadium but also #Odisha seems dedicated to the motto of #HockeyComesHome . Truly dedicated to #sports. ",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "10h",
-            "likeCount": 120,
-            "commentCount": 40,
-            "views": "100K",
-            "retweetCount": 10,
-            "blueTick": false
-        },
-        {
-            "id": 3,
-            "name": "DHANBAD DISTRICT CONGRESS",
-            "postData": "कांग्रेस कमिटी के द्वारा चलाए जा रहे चलो गांव की और कार्यक्रम आज दूसरे जारी\\nऔर देर शाम समापन किया गया। \\n @avinashpandeinc \\n@SantoshSinghINChttps: //antarkatha.comकांग्रेस-कमिटी-के-द्वारा/",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "2h",
-            "likeCount": 5000,
-            "commentCount": 20,
-            "views": "10K",
-            "retweetCount": 150,
-            "blueTick": false
-        },
-        {
-            "id": 4,
-            "name": "TOI Plus",
-            "postData": "With the Telugu epic action drama winning a Golden Globe for best original song Naatu Naatu, a look at why Rajamouli’s latest has beaten Bollywood to catch the love of foreign critics.",
-            "isLiked": false,
-            "isBookmarked": false,
-            "time": "1.5h",
-            "likeCount": 300,
-            "commentCount": 120,
-            "views": "749K",
-            "retweetCount": 200,
-            "blueTick": true
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "name": "Brie",
+      "postData": "Hi. Here is the latest episode of #SomeMoreNews with @drmistercody https://youtu.be/RlL4xvn6xWE",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": 1673160860000,
+      "likeCount": 180,
+      "commentCount": 19,
+      "views": "74.9K",
+      "retweetCount": 180,
+      "blueTick": true
+    },
+    {
+      "id": 2,
+      "name": "Saurabh Gupta(Micky)",
+      "postData": "Folks at @sports_odisha& entire machinery led by  @CMO_Odish @Naveen_Odish have not only built a huge hockey stadium but also #Odisha seems dedicated to the motto of #HockeyComesHome . Truly dedicated to #sports. ",
+      "isLiked": true,
+      "isBookmarked": false,
+      "time": 1673333660000,
+      "likeCount": 121,
+      "commentCount": 40,
+      "views": "100K",
+      "retweetCount": 10,
+      "blueTick": false
+    },
+    {
+      "id": 3,
+      "name": "DHANBAD DISTRICT CONGRESS",
+      "postData": "कांग्रेस कमिटी के द्वारा चलाए जा रहे चलो गांव की और कार्यक्रम आज दूसरे जारी\\nऔर देर शाम समापन किया गया। \\n @avinashpandeinc \\n@SantoshSinghINChttps: //antarkatha.comकांग्रेस-कमिटी-के-द्वारा/",
+      "isLiked": true,
+      "isBookmarked": false,
+      "time": 1673344460000,
+      "likeCount": 5001,
+      "commentCount": 20,
+      "views": "10K",
+      "retweetCount": 150,
+      "blueTick": false
+    }
+  ]
 }

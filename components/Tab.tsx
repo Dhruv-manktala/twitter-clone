@@ -5,7 +5,7 @@ const Tab = ({ name, currentTab, changeTab, outline, solid }: tabPropType) => {
   return (
     <>
       <div
-        className={`text-2xl font-semibold m-2 flex gap-2 item-center ${
+        className={`text-2xl font-semibold m-2 flex gap-2 item-center cursor-pointer hover:text-blue-500 ${
           currentTab ? "text-blue-500" : ""
         }`}
         onClick={() => {
