@@ -7,7 +7,7 @@
 // Overall background of dark mode related part: #202329
 import { CiSearch as SearchIcon } from "react-icons/ci";
 import { IoCloseCircleOutline as CloseSearch } from "react-icons/io5";
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import { UserInterface } from "../lib/types/type";
 import { SearchSuggestionCard } from "./SearchSuggestionCard";
 const Search = () => {
@@ -31,7 +31,12 @@ const Search = () => {
 
   return (
     <>
-      <form className="flex w-4/5 justify-between items-center m-auto bg-[#202329] focus-within:border-2 border-[#1d9bf0] py-2 rounded-t-full rounded-b-full relative">
+      <form
+        className="flex w-4/5 justify-between items-center m-auto bg-[#202329] focus-within:border-2 border-[#1d9bf0] py-2 rounded-t-full rounded-b-full relative"
+        onSubmit={(submitEvent: FormEvent) => {
+          submitEvent.preventDefault();
+        }}
+      >
         <div className="pl-3">
           <SearchIcon className="text-[#eef3f4]" />
         </div>
@@ -45,7 +50,7 @@ const Search = () => {
           />
         </div>
         {searchQuery !== "" || listView ? (
-          <ul className="list-none flex flex-col overflow-hidden w-full bg-[#202329] absolute h-max top-11">
+          <ul className="list-none flex flex-col overflow-hidden w-full bg-[#1b6366] absolute h-max rounded-md top-11">
             {usersList.filter(
               ({ user_name, user_display_name }) =>
                 user_name?.toLowerCase().includes(searchQuery) ||
