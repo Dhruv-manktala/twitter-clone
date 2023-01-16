@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { TrendingPostInterface } from "../lib/types/type";
+import { TrendingPost } from "./TrendingPost";
 
 const HappeningFeed = () => {
   const [trendingPosts, updateTrendingPosts] = useState([]);
@@ -10,8 +12,15 @@ const HappeningFeed = () => {
       });
   }, []);
   return (
-    <div className="flex flex-col w-4/5 m-auto bg-[#202329] my-4 p-4 rounded-t-md rounded-b-md">
-      <h3>What`{'s'} happening</h3>
+    <div className="flex flex-col w-4/5 m-auto bg-[#202329] my-4 p-4 rounded-t-md rounded-b-md text-[#eef3f4]">
+      <div className="text-lg font-extrabold">
+        <h3>What&apos;s happening</h3>
+      </div>
+      <ul className="flex flex-col mt-3 list-none">
+        {trendingPosts.map((everyPost: TrendingPostInterface) => {
+          return <TrendingPost key={everyPost.id} trendingPost={everyPost} />;
+        })}
+      </ul>
     </div>
   );
 };
