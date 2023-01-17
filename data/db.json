@@ -64,6 +64,20 @@
       "views": 0,
       "retweetCount": 0,
       "blueTick": true
+    },
+    {
+      "id": "08822475-6615-4f09-8f5c-258431821fc2",
+      "name": "Fake User",
+      "postData": "tweet",
+      "postImage": "blob:http://localhost:3000/657d9863-be08-4352-b328-455da26a8f00",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": 1673958436041,
+      "likeCount": 0,
+      "commentCount": 0,
+      "views": 0,
+      "retweetCount": 0,
+      "blueTick": true
     }
   ]
 }

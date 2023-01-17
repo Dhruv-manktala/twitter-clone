@@ -43,6 +43,15 @@ const Post = ({ data, toggleLike, toggleBookmark }: postPropType) => {
             }}
           >
             <p>{data.postData}</p>
+
+            {data.postImage && (
+              <div
+                className="post_image w-full flex justify-center align-items overflow-hidden border border-gray-300 rounded-md"
+                style={{ maxHeight: "250px" }}
+              >
+                <img src={data.postImage} className="object-cover" />
+              </div>
+            )}
           </div>
 
           <div className="post_functionalilty flex justify-between p-2 w-10/12 items-center text-gray-500">

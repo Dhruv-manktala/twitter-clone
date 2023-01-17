@@ -14,6 +14,7 @@ export interface postType {
   id: number;
   name: string;
   postData: string;
+  postImage: string | null;
   isLiked: boolean;
   isBookmarked: boolean;
   time: string;
@@ -40,7 +41,7 @@ export interface tabPropType {
 export interface feedsPropType {
   input: string;
   setInput: (tweet: string) => void;
-  addTweet: () => void;
+  addTweet: (postImage: string | null) => void;
   data: { posts: postType[]; currentTab: string };
   toggleLike: (id: number) => void;
   toggleBookmark: (id: number) => void;
@@ -49,7 +50,7 @@ export interface feedsPropType {
 export interface tweetPropType {
   input: string;
   setInput: (tweet: string) => void;
-  addTweet: () => void;
+  addTweet: (postImage: string | null) => void;
 }
 
 export interface postPropType {
