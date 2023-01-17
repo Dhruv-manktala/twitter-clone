@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve-json": "json-server --watch data/db.json --port 8000"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -16,12 +17,14 @@
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "html-react-parser": "^3.0.7",
+    "json-server": "^0.17.1",
     "moment": "^2.29.4",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "typescript": "4.9.4",
+    "usehooks-ts": "^2.9.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

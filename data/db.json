@@ -30,14 +30,143 @@
       "id": 3,
       "name": "DHANBAD DISTRICT CONGRESS",
       "postData": "कांग्रेस कमिटी के द्वारा चलाए जा रहे चलो गांव की और कार्यक्रम आज दूसरे जारी\\nऔर देर शाम समापन किया गया। \\n @avinashpandeinc \\n@SantoshSinghINChttps: //antarkatha.comकांग्रेस-कमिटी-के-द्वारा/",
-      "isLiked": true,
+      "isLiked": false,
       "isBookmarked": false,
       "time": 1673344460000,
-      "likeCount": 5001,
+      "likeCount": 5000,
       "commentCount": 20,
       "views": "10K",
       "retweetCount": 150,
       "blueTick": false
+    },
+    {
+      "id": 4,
+      "name": "TOI Plus",
+      "postData": "With the Telugu epic action drama winning a Golden Globe for best original song Naatu Naatu, a look at why Rajamouli’s latest has beaten Bollywood to catch the love of foreign critics.",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": "1.5h",
+      "likeCount": 300,
+      "commentCount": 120,
+      "views": "749K",
+      "retweetCount": 200,
+      "blueTick": true
+    },
+    {
+      "id": "b101d564-6f0a-44e2-a166-af8b3dc156c7",
+      "name": "Fake User",
+      "postData": "dkddkdk",
+      "isLiked": true,
+      "isBookmarked": true,
+      "time": 1673854136384,
+      "likeCount": 1,
+      "commentCount": 0,
+      "views": 0,
+      "retweetCount": 0,
+      "blueTick": true
+    },
+    {
+      "id": "c9162d76-e718-4de8-95e3-945913484c55",
+      "name": "Fake User",
+      "postData": "woww",
+      "isLiked": false,
+      "isBookmarked": true,
+      "time": 1673854169911,
+      "likeCount": 0,
+      "commentCount": 0,
+      "views": 0,
+      "retweetCount": 0,
+      "blueTick": true
+    },
+    {
+      "id": "713938eb-d9ca-45f0-963d-52d819c06e8f",
+      "name": "Fake User",
+      "postData": "hello",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": 1673872708927,
+      "likeCount": 0,
+      "commentCount": 0,
+      "views": 0,
+      "retweetCount": 0,
+      "blueTick": true
+    },
+    {
+      "id": "51b9e738-552b-4fd7-a62d-70771ae35562",
+      "name": "Fake User",
+      "postData": "wiwow",
+      "isLiked": false,
+      "isBookmarked": false,
+      "time": 1673872725396,
+      "likeCount": 0,
+      "commentCount": 0,
+      "views": 0,
+      "retweetCount": 0,
+      "blueTick": true
+    }
+  ],
+  "trendingPosts": [
+    {
+      "id": "trending_post_1",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 11500,
+      "trending_person_name": "ViratKohli"
+    },
+    {
+      "id": "trending_post_2",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 1809,
+      "trending_person_name": "Gambhir"
+    },
+    {
+      "id": "trending_post_3",
+      "topic": "Sports",
+      "trending_global": true,
+      "tweet_count": 1809,
+      "trending_person_name": "Gambhir"
+    },
+    {
+      "id": "trending_post_4",
+      "topic": "India",
+      "trending_global": false,
+      "tweet_count": 45900,
+      "trending_person_name": "RRRMovie"
+    },
+    {
+      "id": "trending_post_5",
+      "topic": "India",
+      "trending_global": false,
+      "tweet_count": 4228,
+      "trending_person_name": "Shubham Gill"
+    }
+  ],
+  "users_list": [
+    {
+      "user_id": "opex_1",
+      "user_name": "prakharrai1609",
+      "user_img": "https://pbs.twimg.com/profile_images/1584943698491887618/5x2-gsGx_400x400.jpg",
+      "user_display_name": "Prakhar Rai"
+    },
+    {
+      "user_id": "opex_2",
+      "user_name": "ritik2209",
+      "user_img": "https://pbs.twimg.com/profile_images/1560696782341881856/ZSUGmcdY_400x400.jpg",
+      "user_display_name": "Ritik Agarwal"
+    },
+    {},
+    {
+      "user_id": "opex_3",
+      "user_name": "anishde10",
+      "user_img": "https://pbs.twimg.com/profile_images/1604156766081544193/or4TytCy_400x400.jpg",
+      "user_display_name": "Anish De"
+    },
+    {
+      "user_id": "opex_4",
+      "user_name": "riti2409",
+      "user_img": "https://pbs.twimg.com/profile_images/1606957091062939649/MHN4mAZ1_400x400.jpg",
+      "user_display_name": "Riti Kumari"
     }
   ]
 }

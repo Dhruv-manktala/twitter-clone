@@ -2,7 +2,6 @@ import { logo } from "../data/images";
 import { tabs } from "../data/tabs";
 import { navigationPropsType } from "../lib/types/type";
 import Tab from "./Tab";
-import Trending from "./Trending";
 
 const Navigation = ({ currentTab, changeTab }: navigationPropsType) => {
   return (

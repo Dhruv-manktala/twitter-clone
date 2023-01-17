@@ -57,3 +57,18 @@ export interface postPropType {
   toggleLike: (id: number) => void;
   toggleBookmark: (id: number) => void;
 }
+
+export interface TrendingPostInterface {
+  id: string;
+  topic: string;
+  trending_global: boolean;
+  tweet_count: number;
+  trending_person_name: string;
+}
+
+export interface UserInterface {
+  user_id: string;
+  user_name: string;
+  user_img: string;
+  user_display_name: string;
+}
