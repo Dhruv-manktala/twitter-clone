@@ -32,7 +32,7 @@ const Search = () => {
   return (
     <>
       <form
-        className="flex w-4/5 justify-between items-center m-auto bg-[#202329] focus-within:border-2 border-[#1d9bf0] py-2 rounded-t-full rounded-b-full relative"
+        className="flex w-4/5 justify-between items-center m-auto bg-[#202329] border border-transparent focus-within:border-[#1d9bf0] py-2 rounded-t-full rounded-b-full relative"
         onSubmit={(submitEvent: FormEvent) => {
           submitEvent.preventDefault();
         }}
