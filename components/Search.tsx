@@ -7,10 +7,27 @@
 // Overall background of dark mode related part: #202329
 import { CiSearch as SearchIcon } from "react-icons/ci";
 import { IoCloseCircleOutline as CloseSearch } from "react-icons/io5";
-import { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import {
+  useState,
+  useEffect,
+  ChangeEvent,
+  FormEvent,
+  Dispatch,
+  SetStateAction,
+} from "react";
 import { UserInterface } from "../lib/types/type";
 import { SearchSuggestionCard } from "./SearchSuggestionCard";
-const Search = () => {
+const Search = ({
+  profileFlag,
+  updateProfileFlag,
+  profileSelected,
+  updateProfileSelected,
+}: {
+  profileFlag: boolean;
+  updateProfileFlag: Dispatch<SetStateAction<boolean>>;
+  profileSelected: UserInterface;
+  updateProfileSelected: Dispatch<SetStateAction<UserInterface>>;
+}) => {
   const [searchQuery, updateSearchQuery] = useState("");
   const [usersList, updateUsersList] = useState<UserInterface[]>([]);
   const [listView, updateListView] = useState(false);
@@ -68,6 +85,11 @@ const Search = () => {
                       <SearchSuggestionCard
                         key={everySearch.user_id}
                         {...everySearch}
+                        searchResult={everySearch}
+                        profileFlag={profileFlag}
+                        updateProfileFlag={updateProfileFlag}
+                        profileSelected={profileSelected}
+                        updateProfileSelected={updateProfileSelected}
                       />
                     );
                   })}

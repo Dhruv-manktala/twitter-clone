@@ -1,15 +1,19 @@
 import Navigation from "../components/Navigation";
 import Feeds from "../components/Feeds";
 import Trending from "../components/Trending";
+import { Profile } from "../components/Profile";
 import { useEffect, useState } from "react";
-import { dataType, postType } from "../lib/types/type";
+import { dataType, postType, UserInterface } from "../lib/types/type";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
   const [input, setInput] = useState<string>("dkddkdk");
   const [data, setData] = useState<dataType>({ posts: [], currentTab: "Home" });
   const [currentTab, setCurrentTab] = useState("Home");
-
+  const [profileFlag, updateProfileFlag] = useState<boolean>(false);
+  const [profileSelected, updateProfileSelected] = useState(
+    {} as UserInterface
+  );
   useEffect(() => {
     fetch("http://localhost:8000/posts?_sort=time&_order=desc ")
       .then((res) => res.json())
@@ -134,15 +138,24 @@ export default function Home() {
     <>
       <div className="homepage h-screen flex">
         <Navigation currentTab={data?.currentTab} changeTab={changeTab} />
-        <Feeds
-          input={input}
-          setInput={setInput}
-          addTweet={addTweet}
-          data={data}
-          toggleLike={toggleLike}
-          toggleBookmark={toggleBookmark}
+        {!profileFlag ? (
+          <Feeds
+            input={input}
+            setInput={setInput}
+            addTweet={addTweet}
+            data={data}
+            toggleLike={toggleLike}
+            toggleBookmark={toggleBookmark}
+          />
+        ) : (
+          <Profile />
+        )}
+        <Trending
+          profileFlag={profileFlag}
+          updateProfileFlag={updateProfileFlag}
+          profileSelected={profileSelected}
+          updateProfileSelected={updateProfileSelected}
         />
-        <Trending />
       </div>
     </>
   );
