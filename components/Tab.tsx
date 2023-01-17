@@ -13,6 +13,7 @@ const Tab = ({ name, currentTab, changeTab, outline, solid }: tabPropType) => {
         }}
       >
         {currentTab && name != "Profile" ? parser(solid) : parser(outline)}
+
         {name == "Profile" ? <RxAvatar size={25} /> : ""}
         <div>{name}</div>
       </div>

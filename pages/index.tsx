@@ -6,7 +6,7 @@ import { dataType, postType } from "../lib/types/type";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
-  const [input, setInput] = useState<string>("dkddkdk");
+  const [input, setInput] = useState<string>("");
   const [data, setData] = useState<dataType>({ posts: [], currentTab: "Home" });
   const [currentTab, setCurrentTab] = useState("Home");
 
@@ -34,12 +34,13 @@ export default function Home() {
     setCurrentTab(tab);
   };
 
-  const addTweet = () => {
+  const addTweet = (postImage: string | null) => {
     if (input) {
       let tweet = {
         id: uuidv4(),
         name: "Fake User",
         postData: input,
+        postImage: postImage,
         isLiked: false,
         isBookmarked: false,
         time: Date.now(),
