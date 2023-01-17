@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { feedsPropType } from "../lib/types/type";
 import Post from "./Post";
 import Tweet from "./Tweet";
@@ -12,6 +13,9 @@ const Feeds = ({
 }: feedsPropType) => {
   return (
     <>
+      <Head>
+        <title>Twitter | {data.currentTab}</title>
+      </Head>
       <div className="feed overflow-auto pr-2`" style={{ width: "45%" }}>
         <Tweet input={input} setInput={setInput} addTweet={addTweet} />
 

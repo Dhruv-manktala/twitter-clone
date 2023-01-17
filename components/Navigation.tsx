@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { logo } from "../data/images";
 import { tabs } from "../data/tabs";
 import { navigationPropsType } from "../lib/types/type";
@@ -9,7 +10,13 @@ const Navigation = ({ currentTab, changeTab }: navigationPropsType) => {
     <>
       <div className="navigation w-1/4 border-r`-2 border-gray-400 flex items-center flex-col">
         {/* Image */}
-        <img src={logo} width="50" className="justify-item-center m-10" />
+        <Image
+          src={logo}
+          width={50}
+          height={50}
+          alt="twitter_logo"
+          className=" m-10"
+        />
         {/* Tabs */}
         <div className="flex flex-col">
           {tabs.map(({ id, tabName, solid, outline }) => {
